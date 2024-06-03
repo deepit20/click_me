@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Chaitanya!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url("pngtree-birthday-party-balloon-decoration-background-picture-image_2149091.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #fe1111;
+            font-size: 36px;
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #ff69b4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #ff85c1;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #surprise img {
+            width: 200px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday, Chaitanya!</h1>
+        <p id="message">Wishing you a fantastic day filled with joy and success. May your year ahead be as brilliant as you are!</p>
+        <button id="surpriseButton" onclick="showSurprise()">Click for a Surprise</button>
+        <div id="surprise" class="hidden">
+            <img src="cadeau-emojo.gif" alt="Balloons">
+            <p>Best wishes,<br>Your Study Partner</p>
+            <button onclick="hideSurprise()">Go Back</button>
+        </div>
+    </div>
+    <script>
+        function showSurprise() {
+            document.getElementById('surprise').classList.remove('hidden');
+            document.getElementById('surpriseButton').classList.add('hidden');
+        }
+
+        function hideSurprise() {
+            document.getElementById('surprise').classList.add('hidden');
+            document.getElementById('surpriseButton').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
